@@ -7,18 +7,163 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D503C44927F8A17B002309D1 /* SwiftUIKitView in Frameworks */ = {isa = PBXBuildFile; productRef = D503C44827F8A17B002309D1 /* SwiftUIKitView */; };
+		D50EBDF2281DDE6B003BE9E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */; };
+		D50EBDF4281DFE5F003BE9E6 /* ScanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */; };
+		D50EBDF6281E3599003BE9E6 /* ScanTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */; };
+		D562094B2809F97800D211B9 /* ScanningSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094A2809F97800D211B9 /* ScanningSession.swift */; };
+		D562094D280A03DB00D211B9 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094C280A03DB00D211B9 /* Patient.swift */; };
+		D562094F280A04D000D211B9 /* FootScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094E280A04D000D211B9 /* FootScan.swift */; };
+		D5620951280A05C500D211B9 /* FootSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5620950280A05C500D211B9 /* FootSide.swift */; };
+		D5620953280A11AC00D211B9 /* ScansList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5620952280A11AC00D211B9 /* ScansList.swift */; };
+		D5760E9A27F1D37000DD5427 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9927F1D37000DD5427 /* AVFoundation.framework */; };
+		D5760E9C27F1D37800DD5427 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9B27F1D37800DD5427 /* CoreImage.framework */; };
+		D5760E9E27F1D38E00DD5427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9D27F1D38E00DD5427 /* CoreGraphics.framework */; };
+		D5760EA027F1D39600DD5427 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9F27F1D39600DD5427 /* CoreMedia.framework */; };
+		D5760EA227F1D39F00DD5427 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EA127F1D39F00DD5427 /* CoreMotion.framework */; };
+		D5760EA427F1D3A700DD5427 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EA327F1D3A700DD5427 /* CoreVideo.framework */; };
+		D5760EA627F1D3B600DD5427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EA527F1D3B600DD5427 /* Foundation.framework */; };
+		D5760EA827F1D3C100DD5427 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EA727F1D3C100DD5427 /* ImageIO.framework */; };
+		D5760EAA27F1D3CA00DD5427 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EA927F1D3CA00DD5427 /* Metal.framework */; };
+		D5760EAC27F1D3D300DD5427 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EAB27F1D3D300DD5427 /* MetalPerformanceShaders.framework */; };
+		D5760EAE27F1D3DD00DD5427 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EAD27F1D3DD00DD5427 /* QuartzCore.framework */; };
+		D5760EB027F1D3ED00DD5427 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EAF27F1D3ED00DD5427 /* VideoToolbox.framework */; };
+		D5760EE727F1E2B300DD5427 /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5760EE627F1E2B300DD5427 /* OSLogExtensions.swift */; };
+		D576773F280EFC670098F97F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576773E280EFC670098F97F /* User.swift */; };
+		D5767741280F023C0098F97F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5767740280F023C0098F97F /* HTTPClient.swift */; };
+		D576A9A627F9585A00BAA710 /* ScanViewController+OpenGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99B27F9585900BAA710 /* ScanViewController+OpenGL.swift */; };
+		D576A9A727F9585A00BAA710 /* ScanViewController+SLAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99C27F9585900BAA710 /* ScanViewController+SLAM.swift */; };
+		D576A9A827F9585A00BAA710 /* ColorMapAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99D27F9585A00BAA710 /* ColorMapAnchor.swift */; };
+		D576A9A927F9585A00BAA710 /* ColorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99E27F9585A00BAA710 /* ColorMap.swift */; };
+		D576A9AA27F9585A00BAA710 /* CaptureSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99F27F9585A00BAA710 /* CaptureSessionError.swift */; };
+		D576A9AB27F9585A00BAA710 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9A027F9585A00BAA710 /* ScanViewController.swift */; };
+		D576A9AC27F9585A00BAA710 /* ScanViewController+CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9A127F9585A00BAA710 /* ScanViewController+CaptureSession.swift */; };
+		D576A9AD27F9585A00BAA710 /* ScanViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9A227F9585A00BAA710 /* ScanViewDelegate.swift */; };
+		D576A9AE27F9585A00BAA710 /* VisualSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9A327F9585A00BAA710 /* VisualSettings.swift */; };
+		D576A9AF27F9585A00BAA710 /* EAGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9A427F9585A00BAA710 /* EAGLView.swift */; };
+		D576A9B027F9585A00BAA710 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9A527F9585A00BAA710 /* UIColorExtensions.swift */; };
+		D576A9C227F959A800BAA710 /* MeshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9B627F959A800BAA710 /* MeshViewController.swift */; };
+		D576A9C327F959A800BAA710 /* ViewPointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9B727F959A800BAA710 /* ViewPointController.swift */; };
+		D576A9C427F959A800BAA710 /* InitialViewModelRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9B827F959A800BAA710 /* InitialViewModelRotation.swift */; };
+		D576A9C527F959A800BAA710 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9B927F959A800BAA710 /* MeshRenderer.swift */; };
+		D576A9C627F959A800BAA710 /* CustomShaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9BA27F959A800BAA710 /* CustomShaders.swift */; };
+		D576A9C727F959A800BAA710 /* ColorizeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9BB27F959A800BAA710 /* ColorizeDelegate.swift */; };
+		D576A9C827F959A800BAA710 /* BatteryStatusMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9BD27F959A800BAA710 /* BatteryStatusMonitor.swift */; };
+		D576A9C927F959A800BAA710 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9BE27F959A800BAA710 /* MainViewController.swift */; };
+		D576A9CA27F959A800BAA710 /* BatteryStatusUIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9BF27F959A800BAA710 /* BatteryStatusUIStackView.swift */; };
+		D576A9CB27F959A800BAA710 /* BatteryStatusListenerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9C027F959A800BAA710 /* BatteryStatusListenerDelegate.swift */; };
+		D576A9CC27F959A800BAA710 /* ScanBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9C127F959A800BAA710 /* ScanBufferDelegate.swift */; };
+		D576A9D027F9646100BAA710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D576A9CF27F9646100BAA710 /* Main.storyboard */; };
+		D596054C27F9B6CA00CE489D /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D596054B27F9B6CA00CE489D /* Scanner.swift */; };
+		D596055027F9B96300CE489D /* ScanStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D596054F27F9B96300CE489D /* ScanStoryboard.storyboard */; };
+		D5A51F0827F91F6600AD3628 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A51F0727F91F6600AD3628 /* GLKit.framework */; };
+		D5A51F0A27F91F9000AD3628 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A51F0927F91F9000AD3628 /* UIKit.framework */; };
+		D5A51F0C27F9212500AD3628 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A51F0B27F9212500AD3628 /* ScannerView.swift */; };
+		D5DDA97627EF93B500B82BD6 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97327EF924600B82BD6 /* Structure.framework */; };
+		D5DDA97727EF93B500B82BD6 /* Structure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97327EF924600B82BD6 /* Structure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5DDA97A27EF93C300B82BD6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97927EF93C300B82BD6 /* Accelerate.framework */; };
+		D5DDA97C27EF93D100B82BD6 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97B27EF93D100B82BD6 /* ExternalAccessory.framework */; };
+		D5DDA97E27EF93E000B82BD6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97D27EF93E000B82BD6 /* MessageUI.framework */; };
+		D5DDA98027EF93E900B82BD6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97F27EF93E900B82BD6 /* OpenGLES.framework */; };
+		D5DDA98327EF948400B82BD6 /* Scanner-bridging-header.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DDA98227EF948400B82BD6 /* Scanner-bridging-header.m */; };
+		D5DDA98727F0CD2F00B82BD6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDA98627F0CD2F00B82BD6 /* LoginView.swift */; };
+		D5DDA98927F14B1200B82BD6 /* ScanningSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDA98827F14B1200B82BD6 /* ScanningSelectionView.swift */; };
+		D5DDA98B27F14C9900B82BD6 /* ActiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDA98A27F14C9900B82BD6 /* ActiveView.swift */; };
+		D5DDA98F27F14D0C00B82BD6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDA98E27F14D0C00B82BD6 /* RootView.swift */; };
+		D5DDA99127F1553000B82BD6 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDA99027F1553000B82BD6 /* ViewRouter.swift */; };
 		D5E983A127EF59FF00D2667F /* ODAtlas3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983A027EF59FF00D2667F /* ODAtlas3DApp.swift */; };
-		D5E983A327EF59FF00D2667F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983A227EF59FF00D2667F /* ContentView.swift */; };
 		D5E983A527EF59FF00D2667F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E983A427EF59FF00D2667F /* Assets.xcassets */; };
 		D5E983A827EF59FF00D2667F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E983A727EF59FF00D2667F /* Preview Assets.xcassets */; };
+		D5E983BA27EF5CBF00D2667F /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983B927EF5CBF00D2667F /* Welcome.swift */; };
+		D5E983BD27EF6DF000D2667F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983BC27EF6DF000D2667F /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D5DDA97827EF93B500B82BD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5DDA97727EF93B500B82BD6 /* Structure.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInfo.swift; sourceTree = "<group>"; };
+		D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTypeSelectionView.swift; sourceTree = "<group>"; };
+		D562094A2809F97800D211B9 /* ScanningSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningSession.swift; sourceTree = "<group>"; };
+		D562094C280A03DB00D211B9 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		D562094E280A04D000D211B9 /* FootScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootScan.swift; sourceTree = "<group>"; };
+		D5620950280A05C500D211B9 /* FootSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootSide.swift; sourceTree = "<group>"; };
+		D5620952280A11AC00D211B9 /* ScansList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScansList.swift; sourceTree = "<group>"; };
+		D5760E9927F1D37000DD5427 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D5760E9B27F1D37800DD5427 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D5760E9D27F1D38E00DD5427 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5760E9F27F1D39600DD5427 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D5760EA127F1D39F00DD5427 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D5760EA327F1D3A700DD5427 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D5760EA527F1D3B600DD5427 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5760EA727F1D3C100DD5427 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D5760EA927F1D3CA00DD5427 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		D5760EAB27F1D3D300DD5427 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		D5760EAD27F1D3DD00DD5427 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D5760EAF27F1D3ED00DD5427 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		D5760EB127F1D40300DD5427 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D5760EE627F1E2B300DD5427 /* OSLogExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogExtensions.swift; sourceTree = "<group>"; };
+		D576773E280EFC670098F97F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D5767740280F023C0098F97F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		D576A99B27F9585900BAA710 /* ScanViewController+OpenGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanViewController+OpenGL.swift"; sourceTree = "<group>"; };
+		D576A99C27F9585900BAA710 /* ScanViewController+SLAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanViewController+SLAM.swift"; sourceTree = "<group>"; };
+		D576A99D27F9585A00BAA710 /* ColorMapAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorMapAnchor.swift; sourceTree = "<group>"; };
+		D576A99E27F9585A00BAA710 /* ColorMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorMap.swift; sourceTree = "<group>"; };
+		D576A99F27F9585A00BAA710 /* CaptureSessionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSessionError.swift; sourceTree = "<group>"; };
+		D576A9A027F9585A00BAA710 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		D576A9A127F9585A00BAA710 /* ScanViewController+CaptureSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanViewController+CaptureSession.swift"; sourceTree = "<group>"; };
+		D576A9A227F9585A00BAA710 /* ScanViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewDelegate.swift; sourceTree = "<group>"; };
+		D576A9A327F9585A00BAA710 /* VisualSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualSettings.swift; sourceTree = "<group>"; };
+		D576A9A427F9585A00BAA710 /* EAGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAGLView.swift; sourceTree = "<group>"; };
+		D576A9A527F9585A00BAA710 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		D576A9B627F959A800BAA710 /* MeshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshViewController.swift; sourceTree = "<group>"; };
+		D576A9B727F959A800BAA710 /* ViewPointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPointController.swift; sourceTree = "<group>"; };
+		D576A9B827F959A800BAA710 /* InitialViewModelRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewModelRotation.swift; sourceTree = "<group>"; };
+		D576A9B927F959A800BAA710 /* MeshRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
+		D576A9BA27F959A800BAA710 /* CustomShaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShaders.swift; sourceTree = "<group>"; };
+		D576A9BB27F959A800BAA710 /* ColorizeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeDelegate.swift; sourceTree = "<group>"; };
+		D576A9BD27F959A800BAA710 /* BatteryStatusMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryStatusMonitor.swift; sourceTree = "<group>"; };
+		D576A9BE27F959A800BAA710 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D576A9BF27F959A800BAA710 /* BatteryStatusUIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryStatusUIStackView.swift; sourceTree = "<group>"; };
+		D576A9C027F959A800BAA710 /* BatteryStatusListenerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryStatusListenerDelegate.swift; sourceTree = "<group>"; };
+		D576A9C127F959A800BAA710 /* ScanBufferDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanBufferDelegate.swift; sourceTree = "<group>"; };
+		D576A9CF27F9646100BAA710 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D596054B27F9B6CA00CE489D /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		D596054F27F9B96300CE489D /* ScanStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanStoryboard.storyboard; sourceTree = "<group>"; };
+		D5A51F0727F91F6600AD3628 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D5A51F0927F91F9000AD3628 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5A51F0B27F9212500AD3628 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		D5DDA97327EF924600B82BD6 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
+		D5DDA97527EF938400B82BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5DDA97927EF93C300B82BD6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D5DDA97B27EF93D100B82BD6 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D5DDA97D27EF93E000B82BD6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D5DDA97F27EF93E900B82BD6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D5DDA98127EF948400B82BD6 /* ODAtlas3D-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ODAtlas3D-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5DDA98227EF948400B82BD6 /* Scanner-bridging-header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Scanner-bridging-header.m"; sourceTree = "<group>"; };
+		D5DDA98627F0CD2F00B82BD6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D5DDA98827F14B1200B82BD6 /* ScanningSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningSelectionView.swift; sourceTree = "<group>"; };
+		D5DDA98A27F14C9900B82BD6 /* ActiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveView.swift; sourceTree = "<group>"; };
+		D5DDA98E27F14D0C00B82BD6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D5DDA99027F1553000B82BD6 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		D5E9839D27EF59FF00D2667F /* ODAtlas3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODAtlas3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E983A027EF59FF00D2667F /* ODAtlas3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODAtlas3DApp.swift; sourceTree = "<group>"; };
-		D5E983A227EF59FF00D2667F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D5E983A427EF59FF00D2667F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5E983A727EF59FF00D2667F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5E983B927EF5CBF00D2667F /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		D5E983BC27EF6DF000D2667F /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +171,133 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5760EAE27F1D3DD00DD5427 /* QuartzCore.framework in Frameworks */,
+				D5DDA98027EF93E900B82BD6 /* OpenGLES.framework in Frameworks */,
+				D5DDA97C27EF93D100B82BD6 /* ExternalAccessory.framework in Frameworks */,
+				D5760EAA27F1D3CA00DD5427 /* Metal.framework in Frameworks */,
+				D5760E9C27F1D37800DD5427 /* CoreImage.framework in Frameworks */,
+				D5A51F0827F91F6600AD3628 /* GLKit.framework in Frameworks */,
+				D5760EA227F1D39F00DD5427 /* CoreMotion.framework in Frameworks */,
+				D5760EA027F1D39600DD5427 /* CoreMedia.framework in Frameworks */,
+				D5760E9A27F1D37000DD5427 /* AVFoundation.framework in Frameworks */,
+				D5A51F0A27F91F9000AD3628 /* UIKit.framework in Frameworks */,
+				D5760E9E27F1D38E00DD5427 /* CoreGraphics.framework in Frameworks */,
+				D5760EA627F1D3B600DD5427 /* Foundation.framework in Frameworks */,
+				D5760EA827F1D3C100DD5427 /* ImageIO.framework in Frameworks */,
+				D5760EAC27F1D3D300DD5427 /* MetalPerformanceShaders.framework in Frameworks */,
+				D5DDA97627EF93B500B82BD6 /* Structure.framework in Frameworks */,
+				D5760EB027F1D3ED00DD5427 /* VideoToolbox.framework in Frameworks */,
+				D5DDA97E27EF93E000B82BD6 /* MessageUI.framework in Frameworks */,
+				D5760EA427F1D3A700DD5427 /* CoreVideo.framework in Frameworks */,
+				D503C44927F8A17B002309D1 /* SwiftUIKitView in Frameworks */,
+				D5DDA97A27EF93C300B82BD6 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5760EE527F1E2A400DD5427 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				D5760EE627F1E2B300DD5427 /* OSLogExtensions.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		D576773A280EFB3E0098F97F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D576773B280EFB6B0098F97F /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D576773B280EFB6B0098F97F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D576773D280EFB800098F97F /* DB */,
+				D576773C280EFB770098F97F /* API */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D576773C280EFB770098F97F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D5767740280F023C0098F97F /* HTTPClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D576773D280EFB800098F97F /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		D576A9B527F959A700BAA710 /* MeshView */ = {
+			isa = PBXGroup;
+			children = (
+				D576A9B627F959A800BAA710 /* MeshViewController.swift */,
+				D576A9B727F959A800BAA710 /* ViewPointController.swift */,
+				D576A9B827F959A800BAA710 /* InitialViewModelRotation.swift */,
+				D576A9B927F959A800BAA710 /* MeshRenderer.swift */,
+				D576A9BA27F959A800BAA710 /* CustomShaders.swift */,
+				D576A9BB27F959A800BAA710 /* ColorizeDelegate.swift */,
+			);
+			path = MeshView;
+			sourceTree = "<group>";
+		};
+		D576A9BC27F959A800BAA710 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D576A9BD27F959A800BAA710 /* BatteryStatusMonitor.swift */,
+				D576A9BE27F959A800BAA710 /* MainViewController.swift */,
+				D576A9BF27F959A800BAA710 /* BatteryStatusUIStackView.swift */,
+				D576A9C027F959A800BAA710 /* BatteryStatusListenerDelegate.swift */,
+				D576A9C127F959A800BAA710 /* ScanBufferDelegate.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		D5A51EF427F91BCA00AD3628 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				D576A99F27F9585A00BAA710 /* CaptureSessionError.swift */,
+				D576A99E27F9585A00BAA710 /* ColorMap.swift */,
+				D576A99D27F9585A00BAA710 /* ColorMapAnchor.swift */,
+				D576A9A427F9585A00BAA710 /* EAGLView.swift */,
+				D576A9A027F9585A00BAA710 /* ScanViewController.swift */,
+				D576A9A127F9585A00BAA710 /* ScanViewController+CaptureSession.swift */,
+				D576A99B27F9585900BAA710 /* ScanViewController+OpenGL.swift */,
+				D576A99C27F9585900BAA710 /* ScanViewController+SLAM.swift */,
+				D576A9A227F9585A00BAA710 /* ScanViewDelegate.swift */,
+				D576A9A527F9585A00BAA710 /* UIColorExtensions.swift */,
+				D576A9A327F9585A00BAA710 /* VisualSettings.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		D5DDA98427EF9A9A00B82BD6 /* ScanningSession */ = {
+			isa = PBXGroup;
+			children = (
+				D576A9BC27F959A800BAA710 /* MainView */,
+				D576A9B527F959A700BAA710 /* MeshView */,
+				D5A51EF427F91BCA00AD3628 /* Scanner */,
+				D5DDA98827F14B1200B82BD6 /* ScanningSelectionView.swift */,
+				D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */,
+			);
+			path = ScanningSession;
+			sourceTree = "<group>";
+		};
 		D5E9839427EF59FF00D2667F = {
 			isa = PBXGroup;
 			children = (
 				D5E9839F27EF59FF00D2667F /* ODAtlas3D */,
 				D5E9839E27EF59FF00D2667F /* Products */,
+				D5E983B827EF5C7A00D2667F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +312,19 @@
 		D5E9839F27EF59FF00D2667F /* ODAtlas3D */ = {
 			isa = PBXGroup;
 			children = (
+				D576773A280EFB3E0098F97F /* Data */,
+				D576A9CF27F9646100BAA710 /* Main.storyboard */,
+				D5760EE527F1E2A400DD5427 /* Logging */,
+				D5DDA97527EF938400B82BD6 /* Info.plist */,
+				D5E983B127EF5C0400D2667F /* Domain */,
+				D5E983B027EF5BF900D2667F /* Presentation */,
+				D5E983AE27EF5BEE00D2667F /* Core */,
 				D5E983A027EF59FF00D2667F /* ODAtlas3DApp.swift */,
-				D5E983A227EF59FF00D2667F /* ContentView.swift */,
 				D5E983A427EF59FF00D2667F /* Assets.xcassets */,
 				D5E983A627EF59FF00D2667F /* Preview Content */,
+				D5DDA98227EF948400B82BD6 /* Scanner-bridging-header.m */,
+				D5DDA98127EF948400B82BD6 /* ODAtlas3D-Bridging-Header.h */,
+				D596054F27F9B96300CE489D /* ScanStoryboard.storyboard */,
 			);
 			path = ODAtlas3D;
 			sourceTree = "<group>";
@@ -67,6 +337,87 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D5E983AE27EF5BEE00D2667F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D5DDA98A27F14C9900B82BD6 /* ActiveView.swift */,
+				D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */,
+				D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D5E983B027EF5BF900D2667F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D5DDA98427EF9A9A00B82BD6 /* ScanningSession */,
+				D5E983BB27EF6DC100D2667F /* CustomStyles */,
+				D5E983B927EF5CBF00D2667F /* Welcome.swift */,
+				D5DDA98627F0CD2F00B82BD6 /* LoginView.swift */,
+				D5DDA98E27F14D0C00B82BD6 /* RootView.swift */,
+				D5DDA99027F1553000B82BD6 /* ViewRouter.swift */,
+				D5A51F0B27F9212500AD3628 /* ScannerView.swift */,
+				D596054B27F9B6CA00CE489D /* Scanner.swift */,
+				D5620952280A11AC00D211B9 /* ScansList.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D5E983B127EF5C0400D2667F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D5E983B227EF5C0E00D2667F /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D5E983B227EF5C0E00D2667F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D562094A2809F97800D211B9 /* ScanningSession.swift */,
+				D562094C280A03DB00D211B9 /* Patient.swift */,
+				D562094E280A04D000D211B9 /* FootScan.swift */,
+				D5620950280A05C500D211B9 /* FootSide.swift */,
+				D576773E280EFC670098F97F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5E983B827EF5C7A00D2667F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A51F0927F91F9000AD3628 /* UIKit.framework */,
+				D5A51F0727F91F6600AD3628 /* GLKit.framework */,
+				D5760EB127F1D40300DD5427 /* libz.tbd */,
+				D5760EAF27F1D3ED00DD5427 /* VideoToolbox.framework */,
+				D5760EAD27F1D3DD00DD5427 /* QuartzCore.framework */,
+				D5760EAB27F1D3D300DD5427 /* MetalPerformanceShaders.framework */,
+				D5760EA927F1D3CA00DD5427 /* Metal.framework */,
+				D5760EA727F1D3C100DD5427 /* ImageIO.framework */,
+				D5760EA527F1D3B600DD5427 /* Foundation.framework */,
+				D5760EA327F1D3A700DD5427 /* CoreVideo.framework */,
+				D5760EA127F1D39F00DD5427 /* CoreMotion.framework */,
+				D5760E9F27F1D39600DD5427 /* CoreMedia.framework */,
+				D5760E9D27F1D38E00DD5427 /* CoreGraphics.framework */,
+				D5760E9B27F1D37800DD5427 /* CoreImage.framework */,
+				D5760E9927F1D37000DD5427 /* AVFoundation.framework */,
+				D5DDA97F27EF93E900B82BD6 /* OpenGLES.framework */,
+				D5DDA97D27EF93E000B82BD6 /* MessageUI.framework */,
+				D5DDA97B27EF93D100B82BD6 /* ExternalAccessory.framework */,
+				D5DDA97927EF93C300B82BD6 /* Accelerate.framework */,
+				D5DDA97327EF924600B82BD6 /* Structure.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5E983BB27EF6DC100D2667F /* CustomStyles */ = {
+			isa = PBXGroup;
+			children = (
+				D5E983BC27EF6DF000D2667F /* MainButton.swift */,
+			);
+			path = CustomStyles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +428,16 @@
 				D5E9839927EF59FF00D2667F /* Sources */,
 				D5E9839A27EF59FF00D2667F /* Frameworks */,
 				D5E9839B27EF59FF00D2667F /* Resources */,
+				D5DDA97827EF93B500B82BD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ODAtlas3D;
+			packageProductDependencies = (
+				D503C44827F8A17B002309D1 /* SwiftUIKitView */,
+			);
 			productName = ODAtlas3D;
 			productReference = D5E9839D27EF59FF00D2667F /* ODAtlas3D.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +454,7 @@
 				TargetAttributes = {
 					D5E9839C27EF59FF00D2667F = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -111,6 +467,9 @@
 				Base,
 			);
 			mainGroup = D5E9839427EF59FF00D2667F;
+			packageReferences = (
+				D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */,
+			);
 			productRefGroup = D5E9839E27EF59FF00D2667F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +484,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D576A9D027F9646100BAA710 /* Main.storyboard in Resources */,
 				D5E983A827EF59FF00D2667F /* Preview Assets.xcassets in Resources */,
+				D596055027F9B96300CE489D /* ScanStoryboard.storyboard in Resources */,
 				D5E983A527EF59FF00D2667F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +498,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E983A327EF59FF00D2667F /* ContentView.swift in Sources */,
+				D576A9C227F959A800BAA710 /* MeshViewController.swift in Sources */,
+				D5DDA98727F0CD2F00B82BD6 /* LoginView.swift in Sources */,
+				D5620953280A11AC00D211B9 /* ScansList.swift in Sources */,
+				D576A9AD27F9585A00BAA710 /* ScanViewDelegate.swift in Sources */,
+				D5DDA98927F14B1200B82BD6 /* ScanningSelectionView.swift in Sources */,
+				D576A9A927F9585A00BAA710 /* ColorMap.swift in Sources */,
+				D576A9CA27F959A800BAA710 /* BatteryStatusUIStackView.swift in Sources */,
+				D576A9C327F959A800BAA710 /* ViewPointController.swift in Sources */,
+				D576A9AE27F9585A00BAA710 /* VisualSettings.swift in Sources */,
+				D576A9C727F959A800BAA710 /* ColorizeDelegate.swift in Sources */,
+				D50EBDF6281E3599003BE9E6 /* ScanTypeSelectionView.swift in Sources */,
+				D576A9A627F9585A00BAA710 /* ScanViewController+OpenGL.swift in Sources */,
+				D576A9C927F959A800BAA710 /* MainViewController.swift in Sources */,
+				D5DDA98B27F14C9900B82BD6 /* ActiveView.swift in Sources */,
+				D50EBDF2281DDE6B003BE9E6 /* Extensions.swift in Sources */,
+				D596054C27F9B6CA00CE489D /* Scanner.swift in Sources */,
+				D5760EE727F1E2B300DD5427 /* OSLogExtensions.swift in Sources */,
+				D50EBDF4281DFE5F003BE9E6 /* ScanInfo.swift in Sources */,
+				D576A9C427F959A800BAA710 /* InitialViewModelRotation.swift in Sources */,
+				D576A9CB27F959A800BAA710 /* BatteryStatusListenerDelegate.swift in Sources */,
+				D576A9AA27F9585A00BAA710 /* CaptureSessionError.swift in Sources */,
+				D576A9CC27F959A800BAA710 /* ScanBufferDelegate.swift in Sources */,
+				D576A9AB27F9585A00BAA710 /* ScanViewController.swift in Sources */,
+				D5E983BD27EF6DF000D2667F /* MainButton.swift in Sources */,
+				D576A9C627F959A800BAA710 /* CustomShaders.swift in Sources */,
+				D576A9A727F9585A00BAA710 /* ScanViewController+SLAM.swift in Sources */,
+				D576A9A827F9585A00BAA710 /* ColorMapAnchor.swift in Sources */,
+				D5DDA98327EF948400B82BD6 /* Scanner-bridging-header.m in Sources */,
+				D5DDA99127F1553000B82BD6 /* ViewRouter.swift in Sources */,
+				D576A9C827F959A800BAA710 /* BatteryStatusMonitor.swift in Sources */,
+				D5620951280A05C500D211B9 /* FootSide.swift in Sources */,
+				D576773F280EFC670098F97F /* User.swift in Sources */,
+				D5DDA98F27F14D0C00B82BD6 /* RootView.swift in Sources */,
+				D5E983BA27EF5CBF00D2667F /* Welcome.swift in Sources */,
+				D576A9B027F9585A00BAA710 /* UIColorExtensions.swift in Sources */,
+				D562094D280A03DB00D211B9 /* Patient.swift in Sources */,
+				D576A9C527F959A800BAA710 /* MeshRenderer.swift in Sources */,
+				D562094B2809F97800D211B9 /* ScanningSession.swift in Sources */,
+				D576A9AF27F9585A00BAA710 /* EAGLView.swift in Sources */,
+				D576A9AC27F9585A00BAA710 /* ScanViewController+CaptureSession.swift in Sources */,
+				D562094F280A04D000D211B9 /* FootScan.swift in Sources */,
 				D5E983A127EF59FF00D2667F /* ODAtlas3DApp.swift in Sources */,
+				D5767741280F023C0098F97F /* HTTPClient.swift in Sources */,
+				D5A51F0C27F9212500AD3628 /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +582,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -195,13 +600,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IBSC_MODULE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "ODAtlas3D/ODAtlas3D-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -239,8 +649,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -249,12 +661,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IBSC_MODULE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "ODAtlas3D/ODAtlas3D-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -264,25 +681,44 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ODAtlas3D/Preview Content\"";
-				DEVELOPMENT_TEAM = LQ7XYSJ2U7;
+				DEVELOPMENT_TEAM = 482DUKDNXG;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"HAS_LIBCXX=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ODAtlas3D/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Atlas;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ODAtlas3D requires camera access for scanning process.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.orthoticsdirect.ODAtlas3D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orthoticsdirect.orthotic3dlab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ODAtlas3D/ODAtlas3D-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,25 +729,39 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ODAtlas3D/Preview Content\"";
-				DEVELOPMENT_TEAM = LQ7XYSJ2U7;
+				DEVELOPMENT_TEAM = 482DUKDNXG;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "HAS_LIBCXX=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ODAtlas3D/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Atlas;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ODAtlas3D requires camera access for scanning process.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.orthoticsdirect.ODAtlas3D;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orthoticsdirect.orthotic3dlab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ODAtlas3D/ODAtlas3D-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +789,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AvdLee/SwiftUIKitView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D503C44827F8A17B002309D1 /* SwiftUIKitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */;
+			productName = SwiftUIKitView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5E9839527EF59FF00D2667F /* Project object */;
 }
