@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ScanningSelectionView: View {
-    
     // Main navigation state object router
     @ObservedObject var viewRouter: ViewRouter
     

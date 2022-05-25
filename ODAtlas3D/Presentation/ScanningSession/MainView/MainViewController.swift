@@ -10,10 +10,13 @@ import UIKit
 import os.log
 import SwiftUI
 
-class MainViewController: UIViewController, ScanBufferDelegate {
+class MainViewController: UIViewController, ScanBufferDelegate, ScanningTriggerDelegate {
     
     // FootSide scanned at the moment
     var footSide = FootSide.left
+    
+    // Add sub-view (EXPERIMENT)
+    var scanSelectionView = ScanSessionStatus() //ScanningSelectionView(viewRouter: ViewRouter())
     
 
     // Reference to the observable object Scanning Session store to update SwiftUI views
@@ -32,6 +35,7 @@ class MainViewController: UIViewController, ScanBufferDelegate {
         super.viewDidLoad()
         
         // EXPERIMENT
+        scanSelectionView.delegate = self
         addSwiftUIStateView()
         self.scanMessageLabel?.text = "No scans taken yet"
         self.sendButton?.layer.cornerRadius = 10
@@ -62,10 +66,18 @@ class MainViewController: UIViewController, ScanBufferDelegate {
     }
     
     // Add sub-view (EXPERIMENT)
-    let scanSelectionView = ScanningSelectionView(viewRouter: ViewRouter())
-    
     func addSwiftUIStateView() {
         addChildSwiftUIView(scanSelectionView, to: portalStatusHostingView)
+    }
+    
+    func runLeftScan() {
+        self.footSide = FootSide.left
+        performSegue(withIdentifier: "NewScanSegue", sender: nil)
+    }
+    
+    func runRightScan() {
+        self.footSide = FootSide.right
+        performSegue(withIdentifier: "NewScanSegue", sender: nil)
     }
     
     /*func addSwiftUIView() {
