@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Entities.swift
 //  ODAtlas3D
 //
 //  Created by Matias Schmid on 19/4/22.
@@ -7,24 +7,9 @@
 
 import Foundation
 
-struct Root: Codable {
-    let users: [User]
-}
-
-struct User: Codable {
-    let username: String
-    let email: String
-    let portalid: String
-    let customerid: String
-    let apikey: String
-    
-    enum CodingKeys: String, CodingKey {
-        case username = "username"
-        case email = "email"
-        case portalid = "portalid"
-        case customerid = "customerid"
-        case apikey = "apikey"
-    }
+struct Provider:Decodable {
+    var name:String
+    var url:String
 }
 
 /*struct User: Identifiable, Decodable {

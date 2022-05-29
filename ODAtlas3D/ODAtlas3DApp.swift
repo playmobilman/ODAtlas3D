@@ -9,7 +9,13 @@ import SwiftUI
 
 @main
 struct ODAtlas3DApp: App {
+    
+    /*
+     * APP entry point, aquí se debe chequear conectividad y en caso
+     * positivo, ir a buscar las url de proveedores
+     */
     var apiClient = HTTPClient()
+
     
     @StateObject var viewRouter = ViewRouter()
     

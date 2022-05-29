@@ -11,6 +11,7 @@
 		D50EBDF2281DDE6B003BE9E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */; };
 		D50EBDF4281DFE5F003BE9E6 /* ScanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */; };
 		D50EBDF6281E3599003BE9E6 /* ScanTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */; };
+		D5286D9A28414C9F00A7B765 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5286D9928414C9F00A7B765 /* AppStorage.swift */; };
 		D562094B2809F97800D211B9 /* ScanningSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094A2809F97800D211B9 /* ScanningSession.swift */; };
 		D562094D280A03DB00D211B9 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094C280A03DB00D211B9 /* Patient.swift */; };
 		D562094F280A04D000D211B9 /* FootScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094E280A04D000D211B9 /* FootScan.swift */; };
@@ -29,7 +30,7 @@
 		D5760EAE27F1D3DD00DD5427 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EAD27F1D3DD00DD5427 /* QuartzCore.framework */; };
 		D5760EB027F1D3ED00DD5427 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760EAF27F1D3ED00DD5427 /* VideoToolbox.framework */; };
 		D5760EE727F1E2B300DD5427 /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5760EE627F1E2B300DD5427 /* OSLogExtensions.swift */; };
-		D576773F280EFC670098F97F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576773E280EFC670098F97F /* User.swift */; };
+		D576773F280EFC670098F97F /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576773E280EFC670098F97F /* Entities.swift */; };
 		D5767741280F023C0098F97F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5767740280F023C0098F97F /* HTTPClient.swift */; };
 		D576A9A627F9585A00BAA710 /* ScanViewController+OpenGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99B27F9585900BAA710 /* ScanViewController+OpenGL.swift */; };
 		D576A9A727F9585A00BAA710 /* ScanViewController+SLAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A99C27F9585900BAA710 /* ScanViewController+SLAM.swift */; };
@@ -98,6 +99,7 @@
 		D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInfo.swift; sourceTree = "<group>"; };
 		D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTypeSelectionView.swift; sourceTree = "<group>"; };
+		D5286D9928414C9F00A7B765 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		D562094A2809F97800D211B9 /* ScanningSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningSession.swift; sourceTree = "<group>"; };
 		D562094C280A03DB00D211B9 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		D562094E280A04D000D211B9 /* FootScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootScan.swift; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 		D5760EAF27F1D3ED00DD5427 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		D5760EB127F1D40300DD5427 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D5760EE627F1E2B300DD5427 /* OSLogExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogExtensions.swift; sourceTree = "<group>"; };
-		D576773E280EFC670098F97F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D576773E280EFC670098F97F /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		D5767740280F023C0098F97F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D576A99B27F9585900BAA710 /* ScanViewController+OpenGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanViewController+OpenGL.swift"; sourceTree = "<group>"; };
 		D576A99C27F9585900BAA710 /* ScanViewController+SLAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScanViewController+SLAM.swift"; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */,
 				D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */,
 				D5BA9327283D434B0086E14F /* Protocols.swift */,
+				D5286D9928414C9F00A7B765 /* AppStorage.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -384,7 +387,7 @@
 				D562094C280A03DB00D211B9 /* Patient.swift */,
 				D562094E280A04D000D211B9 /* FootScan.swift */,
 				D5620950280A05C500D211B9 /* FootSide.swift */,
-				D576773E280EFC670098F97F /* User.swift */,
+				D576773E280EFC670098F97F /* Entities.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				D5620953280A11AC00D211B9 /* ScansList.swift in Sources */,
 				D576A9AD27F9585A00BAA710 /* ScanViewDelegate.swift in Sources */,
 				D5DDA98927F14B1200B82BD6 /* ScanningSelectionView.swift in Sources */,
+				D5286D9A28414C9F00A7B765 /* AppStorage.swift in Sources */,
 				D576A9A927F9585A00BAA710 /* ColorMap.swift in Sources */,
 				D576A9CA27F959A800BAA710 /* BatteryStatusUIStackView.swift in Sources */,
 				D576A9C327F959A800BAA710 /* ViewPointController.swift in Sources */,
@@ -538,7 +542,7 @@
 				D5DDA99127F1553000B82BD6 /* ViewRouter.swift in Sources */,
 				D576A9C827F959A800BAA710 /* BatteryStatusMonitor.swift in Sources */,
 				D5620951280A05C500D211B9 /* FootSide.swift in Sources */,
-				D576773F280EFC670098F97F /* User.swift in Sources */,
+				D576773F280EFC670098F97F /* Entities.swift in Sources */,
 				D5DDA98F27F14D0C00B82BD6 /* RootView.swift in Sources */,
 				D5E983BA27EF5CBF00D2667F /* Welcome.swift in Sources */,
 				D576A9B027F9585A00BAA710 /* UIColorExtensions.swift in Sources */,

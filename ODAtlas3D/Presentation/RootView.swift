@@ -17,12 +17,16 @@ struct RootView: View {
         switch viewRouter.currentActiveView {
         case .Login:
             Welcome(viewRouter: viewRouter).onAppear(){
-                apiClient.getUsers(withURL: "https://1229955b-4fc3-4907-9183-79684c64bc90.mock.pstmn.io/users")
+                apiClient.getAppServiceProviders(withURL: "http://192.168.68.104:8000")
+                //apiClient.getUsers(withURL: "https://1229955b-4fc3-4907-9183-79684c64bc90.mock.pstmn.io/users")
             }
         case .ScanningSessionType:
             ScanTypeSelectionView(viewRouter: viewRouter)
         case .ScanningSelection:
-            ScanningSelectionView(viewRouter: viewRouter)
+            ScanningSelectionView(viewRouter: viewRouter).onAppear(){
+                apiClient.getAppServiceProviders(withURL: "http://192.168.68.104:8000")
+                //apiClient.getUsers(withURL: "https://1229955b-4fc3-4907-9183-79684c64bc90.mock.pstmn.io/users")
+            }
         case .Scanning:
             Scanner(viewRouter: viewRouter)
         case .ScanningLeftFoot:

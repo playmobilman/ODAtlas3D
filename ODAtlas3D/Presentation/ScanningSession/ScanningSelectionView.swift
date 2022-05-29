@@ -134,6 +134,7 @@ struct ScanningSelectionView: View {
             .onAppear(perform: {
                 scanningSession.ReferenceNo = self.viewRouter.referenceNo
                 scanningSession.PatientID = self.viewRouter.patientID
+                
             })
         }
     }
