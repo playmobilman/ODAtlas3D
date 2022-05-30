@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "swifttheming",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dscyrescotti/SwiftTheming.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "65329145640a70d39b0b52072591bec880e9115a"
+      }
+    },
+    {
       "identity" : "swiftuikitview",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AvdLee/SwiftUIKitView",

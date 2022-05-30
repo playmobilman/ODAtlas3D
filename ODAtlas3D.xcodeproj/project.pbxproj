@@ -80,6 +80,7 @@
 		D5E983A827EF59FF00D2667F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E983A727EF59FF00D2667F /* Preview Assets.xcassets */; };
 		D5E983BA27EF5CBF00D2667F /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983B927EF5CBF00D2667F /* Welcome.swift */; };
 		D5E983BD27EF6DF000D2667F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983BC27EF6DF000D2667F /* MainButton.swift */; };
+		D5FECCF12844FEEB00A60A15 /* SwiftTheming in Frameworks */ = {isa = PBXBuildFile; productRef = D5FECCF02844FEEB00A60A15 /* SwiftTheming */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -184,6 +185,7 @@
 				D5DDA97C27EF93D100B82BD6 /* ExternalAccessory.framework in Frameworks */,
 				D5760EAA27F1D3CA00DD5427 /* Metal.framework in Frameworks */,
 				D5760E9C27F1D37800DD5427 /* CoreImage.framework in Frameworks */,
+				D5FECCF12844FEEB00A60A15 /* SwiftTheming in Frameworks */,
 				D5A51F0827F91F6600AD3628 /* GLKit.framework in Frameworks */,
 				D5760EA227F1D39F00DD5427 /* CoreMotion.framework in Frameworks */,
 				D5760EA027F1D39600DD5427 /* CoreMedia.framework in Frameworks */,
@@ -361,6 +363,7 @@
 		D5E983B027EF5BF900D2667F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D5FECCEE2844E6DD00A60A15 /* Components */,
 				D5DDA98427EF9A9A00B82BD6 /* ScanningSession */,
 				D5E983BB27EF6DC100D2667F /* CustomStyles */,
 				D5E983B927EF5CBF00D2667F /* Welcome.swift */,
@@ -370,7 +373,6 @@
 				D5A51F0B27F9212500AD3628 /* ScannerView.swift */,
 				D596054B27F9B6CA00CE489D /* Scanner.swift */,
 				D5620952280A11AC00D211B9 /* ScansList.swift */,
-				D55B00652843B1030094DE11 /* LaunchProvider.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -430,6 +432,14 @@
 			path = CustomStyles;
 			sourceTree = "<group>";
 		};
+		D5FECCEE2844E6DD00A60A15 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D55B00652843B1030094DE11 /* LaunchProvider.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,6 +459,7 @@
 			name = ODAtlas3D;
 			packageProductDependencies = (
 				D503C44827F8A17B002309D1 /* SwiftUIKitView */,
+				D5FECCF02844FEEB00A60A15 /* SwiftTheming */,
 			);
 			productName = ODAtlas3D;
 			productReference = D5E9839D27EF59FF00D2667F /* ODAtlas3D.app */;
@@ -481,6 +492,7 @@
 			mainGroup = D5E9839427EF59FF00D2667F;
 			packageReferences = (
 				D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */,
+				D5FECCEF2844FEEB00A60A15 /* XCRemoteSwiftPackageReference "SwiftTheming" */,
 			);
 			productRefGroup = D5E9839E27EF59FF00D2667F /* Products */;
 			projectDirPath = "";
@@ -817,6 +829,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		D5FECCEF2844FEEB00A60A15 /* XCRemoteSwiftPackageReference "SwiftTheming" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dscyrescotti/SwiftTheming.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -824,6 +844,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */;
 			productName = SwiftUIKitView;
+		};
+		D5FECCF02844FEEB00A60A15 /* SwiftTheming */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5FECCEF2844FEEB00A60A15 /* XCRemoteSwiftPackageReference "SwiftTheming" */;
+			productName = SwiftTheming;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

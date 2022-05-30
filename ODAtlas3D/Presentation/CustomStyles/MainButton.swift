@@ -27,8 +27,7 @@ struct MainButton: ButtonStyle {
                 )
             )
             .foregroundColor(!configuration.isPressed ? .white : .black)
-            .cornerRadius(12)
-            .clipShape(Capsule())
+            .cornerRadius(6)
     }
 }
 

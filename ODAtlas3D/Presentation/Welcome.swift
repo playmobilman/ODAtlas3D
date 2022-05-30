@@ -13,7 +13,7 @@ struct Welcome: View {
     @StateObject var viewRouter: ViewRouter
     
     //MARK: HTTPClient object attached to environment for global access
-    @EnvironmentObject var apiClient: HTTPClient
+    //@EnvironmentObject var apiClient: HTTPClient
     
     var body: some View {
         ZStack {
@@ -41,14 +41,14 @@ struct Welcome: View {
                     .lineLimit(3)
                     .padding()
                 
-                HStack{
+                /*HStack{
                     ForEach(apiClient.providers) { provider in
                         Button(action: {
                             print("Logging in...")
                             // REDIRECT TO SCAN TYPE SESSION
                             //viewRouter.currentActiveView = .ScanningSessionType
                             //viewRouter.currentActiveView = .ScanningSelection
-                            if let NtN_NewPatientURL = URL(string: "http://192.168.68.104:8080") {
+                            if let NtN_NewPatientURL = URL(string: "http://192.168.68.103:8080") {
                                 UIApplication.shared.open(NtN_NewPatientURL)
                             }
                         }) {
@@ -61,7 +61,8 @@ struct Welcome: View {
                             }
                         }.buttonStyle(MainButton())
                     }
-                }
+                }*/
+                LaunchProvider()
                 .padding()
             }
             .frame(

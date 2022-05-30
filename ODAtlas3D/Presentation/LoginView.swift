@@ -41,7 +41,7 @@ struct LoginView: View {
                         // REDIRECT TO SCAN TYPE SESSION
                         //viewRouter.currentActiveView = .ScanningSessionType
                         //viewRouter.currentActiveView = .ScanningSelection
-                        if let NtN_NewPatientURL = URL(string: "http://192.168.68.104:8080") {
+                        if let NtN_NewPatientURL = URL(string: "http://192.168.68.103:8080") {
                             UIApplication.shared.open(NtN_NewPatientURL)
                         }
                     }) {

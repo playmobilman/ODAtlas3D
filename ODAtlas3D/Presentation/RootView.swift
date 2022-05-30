@@ -16,13 +16,13 @@ struct RootView: View {
         case .Login:
             Welcome(viewRouter: viewRouter).onAppear(){
                 // Go get branding provider URLs
-                apiClient.getAppServiceProviders(withURL: "http://192.168.68.104:8000")
+                apiClient.getAppServiceProviders(withURL: "http://192.168.68.103:8000")
             }
         case .ScanningSessionType:
             ScanTypeSelectionView(viewRouter: viewRouter)
         case .ScanningSelection:
             ScanningSelectionView(viewRouter: viewRouter).onAppear(){
-                apiClient.getAppServiceProviders(withURL: "http://192.168.68.104:8000")
+                apiClient.getAppServiceProviders(withURL: "http://192.168.68.103:8000")
             }
         case .Scanning:
             Scanner(viewRouter: viewRouter)

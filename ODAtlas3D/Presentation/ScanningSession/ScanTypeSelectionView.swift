@@ -28,7 +28,7 @@ struct ScanTypeSelectionView: View {
             VStack {
                 Button(action: {
                     print("New patient processing...")
-                    if let NtN_NewPatientURL = URL(string: "http://192.168.68.104:8080") {
+                    if let NtN_NewPatientURL = URL(string: "http://192.168.68.103:8080") {
                         UIApplication.shared.open(NtN_NewPatientURL)
                     }
                 }) {
@@ -50,7 +50,7 @@ struct ScanTypeSelectionView: View {
             VStack {
                 Button(action: {
                     print("Existing patient processing...")
-                    if let NtN_NewPatientURL = URL(string: "http://192.168.68.104:8080") {
+                    if let NtN_NewPatientURL = URL(string: "http://192.168.68.103:8080") {
                         UIApplication.shared.open(NtN_NewPatientURL)
                     }
                 }) {
