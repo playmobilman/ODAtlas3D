@@ -25,7 +25,10 @@ struct ODAtlas3DApp: App {
             .onOpenURL{ url in
                 viewRouter.referenceNo = url.queryParams!["refno"]!
                 viewRouter.patientID = url.queryParams!["patientID"]!
+                // Current view ScanningSelection
                 viewRouter.currentActiveView = .ScanningSelection
+                //viewRouter.currentActiveView = .Launcher
+                
             }.environmentObject(apiClient)
         }
     }

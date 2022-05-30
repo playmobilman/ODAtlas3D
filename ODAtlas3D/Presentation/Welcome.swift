@@ -12,6 +12,9 @@ struct Welcome: View {
     //MARK: ViewRouter State Object
     @StateObject var viewRouter: ViewRouter
     
+    //MARK: HTTPClient object attached to environment for global access
+    @EnvironmentObject var apiClient: HTTPClient
+    
     var body: some View {
         ZStack {
             VStack(spacing: 10) {
@@ -20,7 +23,7 @@ struct Welcome: View {
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
                 
-                Text("Start scanning and working with patients.")
+                Text("Please select a provider to start scanning and working with patients.")
                     .font(.system(size: 28))
                     .foregroundColor(.white)
                     .frame(width: 350)
@@ -30,27 +33,33 @@ struct Welcome: View {
                 
                 Divider()
                 
+                Text("Available providers")
+                    .font(.system(size: 15))
+                    .foregroundColor(.white)
+                    .frame(width: 350)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(3)
+                    .padding()
+                
                 HStack{
-                    Button(action: {
-                        print("Logging in...")
-                        // REDIRECT TO SCAN TYPE SESSION
-                        //viewRouter.currentActiveView = .ScanningSessionType
-                        //viewRouter.currentActiveView = .ScanningSelection
-                        if let NtN_NewPatientURL = URL(string: "http://192.168.68.104:8080") {
-                            UIApplication.shared.open(NtN_NewPatientURL)
-                        }
-                    }) {
-                        HStack {
-                            Image(systemName: "person.crop.circle.fill.badge.checkmark")
-                                .font(.body)
-                            Text("Start now")
-                                .fontWeight(.medium)
-                                .font(.system(size: 20))
-                        }
-                        .padding(10)
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                    ForEach(apiClient.providers) { provider in
+                        Button(action: {
+                            print("Logging in...")
+                            // REDIRECT TO SCAN TYPE SESSION
+                            //viewRouter.currentActiveView = .ScanningSessionType
+                            //viewRouter.currentActiveView = .ScanningSelection
+                            if let NtN_NewPatientURL = URL(string: "http://192.168.68.104:8080") {
+                                UIApplication.shared.open(NtN_NewPatientURL)
+                            }
+                        }) {
+                            HStack {
+                                Image(systemName: "square.and.arrow.up.on.square")
+                                    .font(.body)
+                                Text(provider.name)
+                                    .fontWeight(.medium)
+                                    .font(.system(size: 20))
+                            }
+                        }.buttonStyle(MainButton())
                     }
                 }
                 .padding()

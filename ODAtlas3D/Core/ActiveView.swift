@@ -7,6 +7,7 @@
 
 enum ActiveView {
     case Login
+    case Launcher
     case ScanningSelection
     case ScanningSession
     case ScanningSessionType

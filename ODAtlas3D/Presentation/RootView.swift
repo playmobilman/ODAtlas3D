@@ -10,22 +10,19 @@ import SwiftUI
 struct RootView: View {
     // HTTPClient object attached to environment for global access
     @EnvironmentObject var apiClient: HTTPClient
-    
     @ObservedObject var viewRouter: ViewRouter
-    
     var body: some View {
         switch viewRouter.currentActiveView {
         case .Login:
             Welcome(viewRouter: viewRouter).onAppear(){
+                // Go get branding provider URLs
                 apiClient.getAppServiceProviders(withURL: "http://192.168.68.104:8000")
-                //apiClient.getUsers(withURL: "https://1229955b-4fc3-4907-9183-79684c64bc90.mock.pstmn.io/users")
             }
         case .ScanningSessionType:
             ScanTypeSelectionView(viewRouter: viewRouter)
         case .ScanningSelection:
             ScanningSelectionView(viewRouter: viewRouter).onAppear(){
                 apiClient.getAppServiceProviders(withURL: "http://192.168.68.104:8000")
-                //apiClient.getUsers(withURL: "https://1229955b-4fc3-4907-9183-79684c64bc90.mock.pstmn.io/users")
             }
         case .Scanning:
             Scanner(viewRouter: viewRouter)
@@ -35,6 +32,9 @@ struct RootView: View {
         case .ScanningRightFoot:
             // Open with right foot info
             Scanner(viewRouter: viewRouter, footSide: FootSide.right)
+        case .Launcher:
+            // Open launcher view
+            LaunchProvider()
         default:
             Scanner(viewRouter: viewRouter)
         }

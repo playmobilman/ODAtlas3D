@@ -32,7 +32,6 @@ class HTTPClient: ObservableObject {
                     do {
                         let decodedProviders = try JSONDecoder().decode([Provider].self, from: data)
                         self.providers = decodedProviders
-                        print(decodedProviders)
                     } catch let error {
                         print("Error decoding response", error)
                     }
