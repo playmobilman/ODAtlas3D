@@ -15,10 +15,11 @@ struct ScanningSelectionView: View {
     // It´ll be initialized with URL Scheme parameters corresponding to ReferenceNo. and PatientID
     // Check previous existence of this object
     @ObservedObject var scanningSession = ScanningSession()
+    @EnvironmentObject var appTheme: AppTheme
     
     var body: some View {
         ZStack {
-            Color("Background").edgesIgnoringSafeArea(.all)
+            Color(appTheme.providerPrimaryColor!).edgesIgnoringSafeArea(.all)
             VStack(alignment: .center, spacing: 20) {
                 Text("This scanning session")
                     .font(.system(size: 25))

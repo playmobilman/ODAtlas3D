@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "swifttheming",
+      "identity" : "dynamiccolor",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dscyrescotti/SwiftTheming.git",
+      "location" : "https://github.com/yannickl/DynamicColor",
       "state" : {
-        "branch" : "main",
-        "revision" : "65329145640a70d39b0b52072591bec880e9115a"
+        "revision" : "d9beca13ca85baa50ee29832d0db5129fba69630",
+        "version" : "5.0.1"
       }
     },
     {

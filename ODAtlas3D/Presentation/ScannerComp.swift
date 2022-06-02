@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Scanner: View {
+struct ScannerComp: View {
     
     @StateObject var viewRouter: ViewRouter
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D503C44927F8A17B002309D1 /* SwiftUIKitView in Frameworks */ = {isa = PBXBuildFile; productRef = D503C44827F8A17B002309D1 /* SwiftUIKitView */; };
+		D50A63872848E707003AD223 /* LauncherProviderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A63862848E707003AD223 /* LauncherProviderButtons.swift */; };
 		D50EBDF2281DDE6B003BE9E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */; };
 		D50EBDF4281DFE5F003BE9E6 /* ScanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */; };
 		D50EBDF6281E3599003BE9E6 /* ScanTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */; };
@@ -18,6 +19,7 @@
 		D562094F280A04D000D211B9 /* FootScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562094E280A04D000D211B9 /* FootScan.swift */; };
 		D5620951280A05C500D211B9 /* FootSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5620950280A05C500D211B9 /* FootSide.swift */; };
 		D5620953280A11AC00D211B9 /* ScansList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5620952280A11AC00D211B9 /* ScansList.swift */; };
+		D5743DA02846D35E00C1E2A1 /* DynamicColor in Frameworks */ = {isa = PBXBuildFile; productRef = D5743D9F2846D35E00C1E2A1 /* DynamicColor */; };
 		D5760E9A27F1D37000DD5427 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9927F1D37000DD5427 /* AVFoundation.framework */; };
 		D5760E9C27F1D37800DD5427 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9B27F1D37800DD5427 /* CoreImage.framework */; };
 		D5760E9E27F1D38E00DD5427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5760E9D27F1D38E00DD5427 /* CoreGraphics.framework */; };
@@ -56,7 +58,7 @@
 		D576A9CB27F959A800BAA710 /* BatteryStatusListenerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9C027F959A800BAA710 /* BatteryStatusListenerDelegate.swift */; };
 		D576A9CC27F959A800BAA710 /* ScanBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576A9C127F959A800BAA710 /* ScanBufferDelegate.swift */; };
 		D576A9D027F9646100BAA710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D576A9CF27F9646100BAA710 /* Main.storyboard */; };
-		D596054C27F9B6CA00CE489D /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D596054B27F9B6CA00CE489D /* Scanner.swift */; };
+		D596054C27F9B6CA00CE489D /* ScannerComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D596054B27F9B6CA00CE489D /* ScannerComp.swift */; };
 		D596055027F9B96300CE489D /* ScanStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D596054F27F9B96300CE489D /* ScanStoryboard.storyboard */; };
 		D5A51F0827F91F6600AD3628 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A51F0727F91F6600AD3628 /* GLKit.framework */; };
 		D5A51F0A27F91F9000AD3628 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A51F0927F91F9000AD3628 /* UIKit.framework */; };
@@ -64,6 +66,7 @@
 		D5BA9324283D014F0086E14F /* ScanSessionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA9323283D014F0086E14F /* ScanSessionStatus.swift */; };
 		D5BA9326283D037C0086E14F /* ODAtlas3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA9325283D037C0086E14F /* ODAtlas3DApp.swift */; };
 		D5BA9328283D434B0086E14F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA9327283D434B0086E14F /* Protocols.swift */; };
+		D5D358CE2845BF9800349FDE /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D358CD2845BF9800349FDE /* AppTheme.swift */; };
 		D5DDA97627EF93B500B82BD6 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97327EF924600B82BD6 /* Structure.framework */; };
 		D5DDA97727EF93B500B82BD6 /* Structure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97327EF924600B82BD6 /* Structure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5DDA97A27EF93C300B82BD6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA97927EF93C300B82BD6 /* Accelerate.framework */; };
@@ -80,7 +83,6 @@
 		D5E983A827EF59FF00D2667F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E983A727EF59FF00D2667F /* Preview Assets.xcassets */; };
 		D5E983BA27EF5CBF00D2667F /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983B927EF5CBF00D2667F /* Welcome.swift */; };
 		D5E983BD27EF6DF000D2667F /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E983BC27EF6DF000D2667F /* MainButton.swift */; };
-		D5FECCF12844FEEB00A60A15 /* SwiftTheming in Frameworks */ = {isa = PBXBuildFile; productRef = D5FECCF02844FEEB00A60A15 /* SwiftTheming */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +100,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D50A63862848E707003AD223 /* LauncherProviderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherProviderButtons.swift; sourceTree = "<group>"; };
 		D50EBDF1281DDE6B003BE9E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D50EBDF3281DFE5F003BE9E6 /* ScanInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInfo.swift; sourceTree = "<group>"; };
 		D50EBDF5281E3599003BE9E6 /* ScanTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTypeSelectionView.swift; sourceTree = "<group>"; };
@@ -147,7 +150,7 @@
 		D576A9C027F959A800BAA710 /* BatteryStatusListenerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryStatusListenerDelegate.swift; sourceTree = "<group>"; };
 		D576A9C127F959A800BAA710 /* ScanBufferDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanBufferDelegate.swift; sourceTree = "<group>"; };
 		D576A9CF27F9646100BAA710 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D596054B27F9B6CA00CE489D /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		D596054B27F9B6CA00CE489D /* ScannerComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerComp.swift; sourceTree = "<group>"; };
 		D596054F27F9B96300CE489D /* ScanStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanStoryboard.storyboard; sourceTree = "<group>"; };
 		D5A51F0727F91F6600AD3628 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D5A51F0927F91F9000AD3628 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -155,6 +158,7 @@
 		D5BA9323283D014F0086E14F /* ScanSessionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSessionStatus.swift; sourceTree = "<group>"; };
 		D5BA9325283D037C0086E14F /* ODAtlas3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODAtlas3DApp.swift; sourceTree = "<group>"; };
 		D5BA9327283D434B0086E14F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		D5D358CD2845BF9800349FDE /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		D5DDA97327EF924600B82BD6 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		D5DDA97527EF938400B82BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D5DDA97927EF93C300B82BD6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -185,12 +189,12 @@
 				D5DDA97C27EF93D100B82BD6 /* ExternalAccessory.framework in Frameworks */,
 				D5760EAA27F1D3CA00DD5427 /* Metal.framework in Frameworks */,
 				D5760E9C27F1D37800DD5427 /* CoreImage.framework in Frameworks */,
-				D5FECCF12844FEEB00A60A15 /* SwiftTheming in Frameworks */,
 				D5A51F0827F91F6600AD3628 /* GLKit.framework in Frameworks */,
 				D5760EA227F1D39F00DD5427 /* CoreMotion.framework in Frameworks */,
 				D5760EA027F1D39600DD5427 /* CoreMedia.framework in Frameworks */,
 				D5760E9A27F1D37000DD5427 /* AVFoundation.framework in Frameworks */,
 				D5A51F0A27F91F9000AD3628 /* UIKit.framework in Frameworks */,
+				D5743DA02846D35E00C1E2A1 /* DynamicColor in Frameworks */,
 				D5760E9E27F1D38E00DD5427 /* CoreGraphics.framework in Frameworks */,
 				D5760EA627F1D3B600DD5427 /* Foundation.framework in Frameworks */,
 				D5760EA827F1D3C100DD5427 /* ImageIO.framework in Frameworks */,
@@ -290,6 +294,14 @@
 			path = Scanner;
 			sourceTree = "<group>";
 		};
+		D5D358CC2845BF6900349FDE /* ThemeManagement */ = {
+			isa = PBXGroup;
+			children = (
+				D5D358CD2845BF9800349FDE /* AppTheme.swift */,
+			);
+			path = ThemeManagement;
+			sourceTree = "<group>";
+		};
 		D5DDA98427EF9A9A00B82BD6 /* ScanningSession */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +375,7 @@
 		D5E983B027EF5BF900D2667F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D5D358CC2845BF6900349FDE /* ThemeManagement */,
 				D5FECCEE2844E6DD00A60A15 /* Components */,
 				D5DDA98427EF9A9A00B82BD6 /* ScanningSession */,
 				D5E983BB27EF6DC100D2667F /* CustomStyles */,
@@ -371,7 +384,7 @@
 				D5DDA98E27F14D0C00B82BD6 /* RootView.swift */,
 				D5DDA99027F1553000B82BD6 /* ViewRouter.swift */,
 				D5A51F0B27F9212500AD3628 /* ScannerView.swift */,
-				D596054B27F9B6CA00CE489D /* Scanner.swift */,
+				D596054B27F9B6CA00CE489D /* ScannerComp.swift */,
 				D5620952280A11AC00D211B9 /* ScansList.swift */,
 			);
 			path = Presentation;
@@ -436,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				D55B00652843B1030094DE11 /* LaunchProvider.swift */,
+				D50A63862848E707003AD223 /* LauncherProviderButtons.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -459,7 +473,7 @@
 			name = ODAtlas3D;
 			packageProductDependencies = (
 				D503C44827F8A17B002309D1 /* SwiftUIKitView */,
-				D5FECCF02844FEEB00A60A15 /* SwiftTheming */,
+				D5743D9F2846D35E00C1E2A1 /* DynamicColor */,
 			);
 			productName = ODAtlas3D;
 			productReference = D5E9839D27EF59FF00D2667F /* ODAtlas3D.app */;
@@ -492,7 +506,7 @@
 			mainGroup = D5E9839427EF59FF00D2667F;
 			packageReferences = (
 				D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */,
-				D5FECCEF2844FEEB00A60A15 /* XCRemoteSwiftPackageReference "SwiftTheming" */,
+				D5743D9E2846D35E00C1E2A1 /* XCRemoteSwiftPackageReference "DynamicColor" */,
 			);
 			productRefGroup = D5E9839E27EF59FF00D2667F /* Products */;
 			projectDirPath = "";
@@ -541,8 +555,9 @@
 				D576A9C927F959A800BAA710 /* MainViewController.swift in Sources */,
 				D5DDA98B27F14C9900B82BD6 /* ActiveView.swift in Sources */,
 				D50EBDF2281DDE6B003BE9E6 /* Extensions.swift in Sources */,
-				D596054C27F9B6CA00CE489D /* Scanner.swift in Sources */,
+				D596054C27F9B6CA00CE489D /* ScannerComp.swift in Sources */,
 				D5760EE727F1E2B300DD5427 /* OSLogExtensions.swift in Sources */,
+				D5D358CE2845BF9800349FDE /* AppTheme.swift in Sources */,
 				D50EBDF4281DFE5F003BE9E6 /* ScanInfo.swift in Sources */,
 				D576A9C427F959A800BAA710 /* InitialViewModelRotation.swift in Sources */,
 				D576A9CB27F959A800BAA710 /* BatteryStatusListenerDelegate.swift in Sources */,
@@ -555,6 +570,7 @@
 				D576A9A827F9585A00BAA710 /* ColorMapAnchor.swift in Sources */,
 				D5DDA98327EF948400B82BD6 /* Scanner-bridging-header.m in Sources */,
 				D5DDA99127F1553000B82BD6 /* ViewRouter.swift in Sources */,
+				D50A63872848E707003AD223 /* LauncherProviderButtons.swift in Sources */,
 				D576A9C827F959A800BAA710 /* BatteryStatusMonitor.swift in Sources */,
 				D5620951280A05C500D211B9 /* FootSide.swift in Sources */,
 				D576773F280EFC670098F97F /* Entities.swift in Sources */,
@@ -829,12 +845,12 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		D5FECCEF2844FEEB00A60A15 /* XCRemoteSwiftPackageReference "SwiftTheming" */ = {
+		D5743D9E2846D35E00C1E2A1 /* XCRemoteSwiftPackageReference "DynamicColor" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dscyrescotti/SwiftTheming.git";
+			repositoryURL = "https://github.com/yannickl/DynamicColor";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -845,10 +861,10 @@
 			package = D503C44727F8A17B002309D1 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */;
 			productName = SwiftUIKitView;
 		};
-		D5FECCF02844FEEB00A60A15 /* SwiftTheming */ = {
+		D5743D9F2846D35E00C1E2A1 /* DynamicColor */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5FECCEF2844FEEB00A60A15 /* XCRemoteSwiftPackageReference "SwiftTheming" */;
-			productName = SwiftTheming;
+			package = D5743D9E2846D35E00C1E2A1 /* XCRemoteSwiftPackageReference "DynamicColor" */;
+			productName = DynamicColor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

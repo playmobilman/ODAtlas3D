@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct ODAtlas3DApp: App {
     @StateObject var viewRouter = ViewRouter()
+    @StateObject var currentTheme = AppTheme()
     var apiClient = HTTPClient()
     
     var body: some Scene {
@@ -21,7 +22,7 @@ struct ODAtlas3DApp: App {
                 // Current view ScanningSelection
                 viewRouter.currentActiveView = .ScanningSelection
                 //viewRouter.currentActiveView = .Launcher
-            }.environmentObject(apiClient)
+            }.environmentObject(apiClient).environmentObject(currentTheme)
         }
     }
 }

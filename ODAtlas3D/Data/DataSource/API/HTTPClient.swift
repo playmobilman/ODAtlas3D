@@ -8,7 +8,7 @@
 import Foundation
 
 class HTTPClient: ObservableObject {
-    @Published private(set) var providers: [Provider] = []
+    @Published var providers: [Provider] = []
     
     func getAppServiceProviders(withURL: String) {
         guard let url = URL(string: withURL) else {
